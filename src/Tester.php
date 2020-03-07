@@ -55,6 +55,30 @@ class Tester implements ContainerInterface
     }
 
     /**
+     * @return array
+     */
+    public function getTestResults()
+    {
+        return $this->testResults;
+    }
+
+    /**
+     * @param array $testResults
+     */
+    public function setTestResults($testResults)
+    {
+        $this->testResults = $testResults;
+    }
+
+    /**
+     * @return array
+     */
+    public function getTestMap()
+    {
+        return $this->testMap;
+    }
+
+    /**
      * @param mixed $testMap
      */
     public function setTestMap($testMap)
