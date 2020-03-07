@@ -25,7 +25,7 @@ class Tester implements ContainerInterface
     {
         if ($this->has($object)) {
             $class = get_class($object);
-            if ($result = call_user_func($this->testMap[$class])) {
+            if ($result = call_user_func($this->testMap[$class], $object)) {
                 $this->testResults[$class] = $result;
                 return $object;
             }
