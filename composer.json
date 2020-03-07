@@ -1,0 +1,21 @@
+{
+  "name": "kosuha606/tester",
+  "description": "Tester",
+  "type": "composer-plugin",
+  "authors": [
+    {
+      "name": "Eugene Kosuhin",
+      "email": "kosuha606@gamil.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0",
+    "psr/container": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "kosuha606\\Tester\\": "src"
+    }
+  }
+}
